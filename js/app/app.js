@@ -101,14 +101,15 @@ document.addEventListener('DOMContentLoaded', function(){
 	};		
 	
 	var app = Vue.createApp(main)
-	.use(router)
-	.component('msg',msg)
-	.component('popup',popup)
-	.component('Header',header)
-	.component('toogle',toogle)
-	.component('Image',img)
-	.mount('#content')
+	app.use(router)
+	app.component('msg',msg)
+	app.component('popup',popup)
+	app.component('Header',header)
+	app.component('toogle',toogle)
+	app.component('Image',img)
+	app.mount('#content')
 });
+
 
 
 
